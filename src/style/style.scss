@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Source+Code+Pro&family=Roboto:ital@0;1&display=swap");
+@import "home";
+@import "projects";
+
+//DEFAULTS
+html {
+    font-size: 69%;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Odibee Sans', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 7rem;
+}
+h3 {
+    font-size: 1.5rem;
+}

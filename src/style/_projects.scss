@@ -1,0 +1,200 @@
+.squares {
+    position: relative;
+    .big1 {
+        position: absolute;
+        background-color: #bbbbbb54;
+        padding-left: 35rem;
+        padding-top: 40rem;
+        margin-top: 20rem;
+    }
+    .small1 {
+        position: absolute;
+        background-color: #3243766e;
+        padding: 5rem;
+        margin-left: 35rem;
+        margin-top: 10rem;
+    }
+    .big2 {
+        position: absolute;
+        background-color: #586ba462;
+        padding-left: 43rem;
+        padding-top: 45.8rem;
+        margin-left: 129.8rem;
+        margin-top: 42rem;
+    }
+    .small2 {
+        position: absolute;
+        background-color: #14456367;
+        padding: 5rem;
+        margin-left: 119.8rem;
+        margin-top: 32rem;
+    }
+}
+
+.projects {
+    min-height: 100vh;
+    // background-color: rgba(15, 2, 36, 0.897);
+    background-color: #144563;
+    color: aliceblue;
+    padding: 2rem 10rem 0rem 10rem;
+    background-image: url(/src/img/projects/groceryRun.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: 275%;
+    background-position-y: 75%;
+    background-size: 145rem;
+    // overflow-x: auto;
+
+    
+
+    .navi {
+        margin: 2rem 0;
+        display: flex;
+        justify-content: space-between;
+        // background-color: #222;
+        font-size: 2rem;
+
+        .emblem {
+            flex: 1;
+            align-self: center;
+            img {
+                width: 15rem;
+                height: auto;
+            }
+        }
+
+        .info {
+            // background-color: green;
+            display: flex;
+            flex: 1;
+            a {
+                text-decoration: none;
+                color: aliceblue;
+                align-self: center;
+                // background-color: red;
+                margin: 0.5rem 5rem 0.5rem 0;
+                position: relative;
+                span {
+                    position: absolute;
+                    width: 0.7rem;
+                    height: 0.7rem;
+                    background: white;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: -20px;
+                    border-radius: 50%;
+                    opacity: 0;
+                    transition: opacity 0.6s;
+                }
+            }
+            a:hover span {
+                opacity: 1;
+            }
+            #pro span {
+                opacity: 1;
+                background-color: #B90265;
+            }
+            
+            #buns {
+                // background-color:s red;
+                margin-left: 20.1%;
+                margin-right: 0;
+                padding: 1rem;
+                padding-right: 1.5rem;
+                border-radius: 0.7rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    margin-left: 1rem;
+                    margin-right: 1rem;
+                    height: 1.9rem;
+                    width: 2rem;
+                }
+            }
+            #buns:hover {
+                background: linear-gradient(to left, red, purple);
+            }
+        }
+    }
+
+    
+
+    .buns {
+        display: flex;
+        margin-top: 10rem;
+        .infograph {
+            flex: 2;
+            // background-color: aqua;
+            height: 82vh;
+            
+            #lang {
+                font-size: 3.5rem;
+                padding-left: 10%;
+                color: #B90265;
+                font-weight: 450;
+            }
+            #project {
+                // background-color: black;
+                font-weight: 450;
+                margin-top: 0;
+            }
+            
+            .what {
+                margin: 5rem 0 5rem;
+                // background-color: red;
+                font-size: 3.25rem;
+                font-weight: 500;
+                width: 70rem;
+            }
+            .how {
+                margin: 5rem 0 5rem;
+                // background-color: green;
+                // font-size: 36px;
+                font-size: 3.25rem;
+                font-weight: 500;
+                width: 75rem;
+            }
+            .resources {
+                display: flex;
+                // background-color: rgb(33, 104, 146);
+                font-size: 2rem;
+                a {
+                    border-radius: 0.7rem;
+                    margin: 1rem;
+                    padding: 1rem;
+                    text-decoration: none;
+                    color: black;
+                }
+                a:first-child {
+                    background-color: #BF33C1;
+                    color: whitesmoke;
+                }
+
+                ul {
+                    visibility: hidden;
+                    position: absolute;
+                    list-style: none;
+                    display: flex;
+                    padding-top: 2rem;
+                    color: linear-gradient(to right, rgb(248, 202, 103), white);
+                    font-weight: 600;
+                    border-bottom: 1rem solid black;
+                    li {
+                        padding-right: 1rem;
+                    }
+                }
+
+            }
+            .resources>a:first-child:hover {
+                ul {
+                    visibility: visible;
+                }
+            }
+        }
+        .phase {
+            flex: 1;
+            // background-color: purple;
+        }
+    }
+}

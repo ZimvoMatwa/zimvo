@@ -1,0 +1,297 @@
+header {
+    min-height: 100vh;
+    // background-color: rgba(15, 2, 36, 0.897);
+    background-color: #20364D;
+    color: aliceblue;
+    padding: 2rem 10rem 0rem 10rem;
+
+    .navi {
+        margin: 2rem 0 10rem 0;
+        display: flex;
+        justify-content: space-between;
+        // background-color: #222;
+        font-size: 2rem;
+
+        .emblem {
+            flex: 1;
+            align-self: center;
+            img {
+                width: 15rem;
+                height: auto;
+            }
+        }
+
+        .info {
+            // background-color: green;
+            display: flex;
+            flex: 1;
+            a {
+                text-decoration: none;
+                color: aliceblue;
+                align-self: center;
+                // background-color: red;
+                margin: 0.5rem 5rem 0.5rem 0;
+                position: relative;
+                span {
+                    position: absolute;
+                    width: 0.7rem;
+                    height: 0.7rem;
+                    background: white;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: -20px;
+                    border-radius: 50%;
+                    opacity: 0;
+                    transition: opacity 0.6s;
+                  }
+            }
+            a:hover span {
+                opacity: 1;
+            }
+            
+            #buns {
+                // background-color:s red;
+                margin-left: 20.1%;
+                margin-right: 0;
+                padding: 1rem;
+                padding-right: 1.5rem;
+                border-radius: 0.7rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    margin-left: 1rem;
+                    margin-right: 1rem;
+                    height: 1.9rem;
+                    width: 2rem;
+                }
+            }
+            #buns:hover {
+                background: linear-gradient(to left, red, purple);
+            }
+        }
+    }
+
+    .xp {
+        font-size: 1.45rem;
+        margin: 0.7rem 0;
+
+        span {
+            color: rgb(248, 202, 103);
+            font-size: 1.6rem;
+        }
+    }
+
+    .who {
+        // background-color: black;
+        display: flex;
+        // justify-content: space-evenly;
+        .bio {
+            padding-top: 0;
+            flex: 1;
+            padding-right: 20%;
+            // background-color: aliceblue;
+            h1 {
+                background: linear-gradient(to right, rgb(248, 202, 103), white);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .movingTitle {
+                // margin-top: 0;
+                background: linear-gradient(to right, rgb(122, 6, 126), white);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            p {
+                color: rgb(199, 195, 180);
+                margin: 2rem 0;
+                // padding: 1rem 0;
+                // background-color: yellowgreen;
+                font-size: 1.5rem;
+                // letter-spacing: 0.1rem;
+                font-weight: 600;
+                line-height: 2.5rem;
+            }
+            .cProjects {
+                // background-color: green;
+                background: linear-gradient(to left, red, purple);
+                padding: 0.5rem 0.2rem;
+                border-radius: 0.5rem;
+                width: fit-content;
+                transition: 0.5s;
+                a {
+                    font-size: 2rem;
+                    font-weight: 600;
+                    color: aliceblue;
+                    text-decoration: none;
+                    background: #222;
+                    padding: 0.3rem 0.7rem;
+                }
+            }
+            .cProjects:hover {
+                background: rgb(155, 153, 153);
+                a {
+                    background: linear-gradient(to left, red, purple);
+                }
+            }
+        }
+        .smile {
+            display: flex;
+            // background-color: green;
+            
+            flex: 1;
+            justify-content: center;
+            .profile {
+                width: 29.50rem;
+                height: 40rem;
+                border-radius: 3%;
+            }
+        }
+    }
+
+    .stacks {
+        margin-top: 3rem;
+        display: flex;
+        font-size: 1.7rem;;
+
+        img {
+            width: 2.5rem;
+            height: 2.5rem;
+            margin: 1rem 1rem 1rem 0;
+        }
+
+        .stack1 {
+            // transition: 0.5s;
+            .stack11 { //a1
+                padding: 1.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-right: 0.2rem solid rgb(199, 195, 180);
+                img:last-child {
+                    display: none;
+                }
+            }
+            .stack11:hover {
+                color: rgb(175, 102, 218);
+                img:last-child {
+                    display: block;
+                }
+                img:first-child {
+                    display: none;
+                }
+            }
+
+            .stack12 { //a2
+                padding: 1.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-right: 0.2rem solid rgb(199, 195, 180);
+                border-top: 0.2rem solid rgb(199, 195, 180);
+                img:last-child {
+                    display: none;
+                }
+            }
+            .stack12:hover {
+                color: rgb(175, 102, 218);
+                img:last-child {
+                    display: block;
+                }
+                img:first-child {
+                    display: none;
+                }
+            }
+
+        }
+
+        .stack2 {
+            .stack21 { //b1
+                padding: 1.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-bottom: 0.2rem solid rgb(199, 195, 180);
+                img:last-child {
+                    display: none;
+                }
+            }
+            .stack21:hover {
+                color: rgb(175, 102, 218);
+                img:last-child {
+                    display: block;
+                }
+                img:first-child {
+                    display: none;
+                }
+            }
+
+            .stack22 { //b2
+                padding: 1.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img:last-child {
+                    display: none;
+                }
+            }
+            .stack22:hover {
+                color: rgb(175, 102, 218);
+                img:last-child {
+                    display: block;
+                }
+                img:first-child {
+                    display: none;
+                }
+            }
+        }
+
+        .stack3 {
+            .stack31 { //c1
+                padding: 1.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-left: 0.2rem solid rgb(199, 195, 180);
+                img:last-child {
+                    display: none;
+                }
+            }
+            .stack31:hover {
+                color: rgb(175, 102, 218);
+                img:last-child {
+                    display: block;
+                }
+                img:first-child {
+                    display: none;
+                }
+            }
+
+            .stack32 { //c2
+                padding: 1.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-left: 0.2rem solid rgb(199, 195, 180);
+                border-top: 0.2rem solid rgb(199, 195, 180);
+                img:last-child {
+                    display: none;
+                }
+            }
+            .stack32:hover {
+                color: rgb(175, 102, 218);
+                img:last-child {
+                    display: block;
+                }
+                img:first-child {
+                    display: none;
+                }
+            }
+        }
+    }
+
+}

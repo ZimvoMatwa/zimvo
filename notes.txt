@@ -1,0 +1,1 @@
+1. Make the nav universal from the style.css file
